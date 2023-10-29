@@ -1,4 +1,5 @@
 void main() {
+  // List<String> aficiones = ["crossfit", "natación"];
   // Map<dynamic, dynamic> personas = {
   //   1: "Pedro",
   //   2: "Juan",
@@ -14,15 +15,21 @@ void main() {
 
   // print(personas);
 
-  //List<String> aficiones = ["crossfit", "natación"];
-
   Map<String, dynamic> aficiones = {
     "deportes": ["crossfit", "piraguismo"],
     "pintar": true,
-    "series": 10
+    "series": ['House of cards', 'La casa de Papel', 'Otros']
+  };
+
+  Map<String, dynamic> manuel = {
+    'Nombre': 'Manuel',
+    'Apodo': 'Manu',
+    'Aficiones': aficiones
   };
 
   Map<String, dynamic> jose = {"nombre": "jose", "aficiones": aficiones};
 
   print(jose["aficiones"]["deportes"]);
+
+  print(manuel['Aficiones']['series']);
 }

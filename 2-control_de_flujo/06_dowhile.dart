@@ -1,6 +1,8 @@
 import 'dart:io';
 
-///El ciclo do-while se ejecuta siempre al menos una vez en el ciclo while puede no cumplirse la condición y por tanto no ejecutarse
+//El ciclo do-while se ejecuta siempre
+//al menos una vez en el ciclo while puede no cumplirse
+// la condición y por tanto no ejecutarse
 
 main() {
   String continuar = 'y';

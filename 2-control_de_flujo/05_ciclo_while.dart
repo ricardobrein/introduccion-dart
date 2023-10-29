@@ -1,16 +1,15 @@
-import 'dart:io';
-
-main() {
-  String continuar = 'y';
-  int contador = 0;
-
-  while (continuar == 'y') {
-    contador++;
-    stdout.writeln('Contador: $contador');
-
-    stdout.writeln('desea continuar? (y/n)');
-    continuar = stdin.readLineSync().toString();
+void main() {
+  int c = 1;
+  while (c <= 10) {
+    // print('El valor es $c');
+    c++;
+    if (c == 5) {
+      print('Esquivamos el numero 5');
+      continue;
+    }
+    print('Value = $c');
   }
+  print('Estas fuera del loop');
 }
 
 
